@@ -1,3 +1,5 @@
+package model;
+
 public class Card {
 
     private String value;
@@ -19,7 +21,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
+        return "model.Card{" +
                 "value='" + value + '\'' +
                 ", suit='" + suit + '\'' +
                 '}';
