@@ -56,14 +56,6 @@ public class Hand {
         }
 
         @Override
-        public String toString() {
-            return "Value{" +
-                    "value=" + value +
-                    ", count=" + count +
-                    '}';
-        }
-
-        @Override
         public int compareTo(Value value) {
             return value.getValue() - this.getValue();
         }

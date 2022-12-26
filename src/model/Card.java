@@ -1,29 +1,39 @@
 package model;
 
-public class Card {
+public class Card implements Comparable<Card> {
 
-    private String value;
+    private Integer value;
 
     private String suit;
 
-    public Card(String value, String suit) {
+    public Card(Integer value, String suit) {
         this.value = value;
         this.suit = suit;
     }
 
-    public String getValue() {
+    public Integer getValue() {
         return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
     }
 
     public String getSuit() {
         return suit;
     }
 
+    public void setSuit(String suit) {
+        this.suit = suit;
+    }
+
     @Override
     public String toString() {
-        return "model.Card{" +
-                "value='" + value + '\'' +
-                ", suit='" + suit + '\'' +
-                '}';
+        return "Value=" + value + ", Suit = " + suit;
+    }
+
+    @Override
+    public int compareTo(Card card) {
+        return card.getValue() - this.value;
     }
 }
