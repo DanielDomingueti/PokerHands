@@ -1,6 +1,4 @@
-package ranks;
-
-import model.Hand;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;

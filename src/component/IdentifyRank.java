@@ -2,7 +2,7 @@ package component;
 
 import model.Counter;
 import model.Hand;
-import ranks.Classification;
+import model.Classification;
 
 import java.util.Collections;
 import java.util.List;
