@@ -112,7 +112,7 @@ public class IdentifyRank {
             List<Hand.Value> fourOfKind = hand.getValues().stream().filter(v -> v.getCount() == 4).collect(Collectors.toList());
             List<Hand.Value> oneValue = hand.getValues().stream().filter(v -> v.getCount() == 1).collect(Collectors.toList());
             if (fourOfKind.size() == 1 && oneValue.size() == 1) {
-                return new Classification(FOUR_OF_KIND_RANK, List.of(fourOfKind));
+                return new Classification(FOUR_OF_KIND_RANK, List.of(fourOfKind, oneValue));
             }
 
             List<Hand.Value> threeOfKind = hand.getValues().stream().filter(v -> v.getCount() == 3).collect(Collectors.toList());
