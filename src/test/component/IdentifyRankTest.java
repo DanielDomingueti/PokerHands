@@ -1,6 +1,7 @@
 package test.component;
 
 import component.IdentifyRank;
+import component.implementation.IdentifyRankImpl;
 import model.Counter;
 import model.Hand;
 
@@ -16,19 +17,19 @@ public class IdentifyRankTest {
     }
 
     public void testCountTie(Hand firstHand, Hand secondHand) {
-        IdentifyRank identifyRank = new IdentifyRank();
+        IdentifyRank identifyRank = new IdentifyRankImpl();
         Counter counter = identifyRank.execute(firstHand, secondHand);
         System.out.println("Should be both zero: " + counter);
     }
 
     public void testCountFirstHandWinner(Hand firstHand, Hand secondHand) {
-        IdentifyRank identifyRank = new IdentifyRank();
+        IdentifyRank identifyRank = new IdentifyRankImpl();
         Counter counter = identifyRank.execute(firstHand, secondHand);
         System.out.println("First hand should win: " + counter);
     }
 
     public void testCountSecondHandWinner(Hand firstHand, Hand secondHand) {
-        IdentifyRank identifyRank = new IdentifyRank();
+        IdentifyRank identifyRank = new IdentifyRankImpl();
         Counter counter = identifyRank.execute(firstHand, secondHand);
         System.out.println("Second hand should win: " + counter);
     }
