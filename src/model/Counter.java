@@ -27,4 +27,12 @@ public class Counter {
     public void setSecondCounter(Integer secondCounter) {
         this.secondCounter = secondCounter;
     }
+
+    @Override
+    public String toString() {
+        return "Counter{" +
+                "firstCounter=" + firstCounter +
+                ", secondCounter=" + secondCounter +
+                '}';
+    }
 }
