@@ -34,6 +34,7 @@ Program output:  The 1st player has won 376 times, whereas the 2nd player has wo
 ## Points I dind't like about the solution
 - Methods are too long. e.g. execute() method of DefineHandCounts doesn't satisfy the condition of Single Responsability Principle because the lines are read inside of it. This allows me to define the winner right after reading a line though.
 - Component Tests could've been better designed if I had JUnit methods. 
+- Commits should've been better organized. 
 
 <br><br>
 ## Which of the technologies or approaches used were new to you.
